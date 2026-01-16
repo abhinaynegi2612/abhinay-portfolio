@@ -1,6 +1,6 @@
-# Geetanjali Pandey – Full-Stack Developer Portfolio
+# Abhinay Negi – Aspiring Data Scientist & Full-Stack Developer Portfolio
 
-A clean, modern, and production-ready portfolio for **Geetanjali Pandey (MCA)**, built with HTML5, CSS3, JavaScript (ES6+), and Bootstrap 5. The site is designed to highlight full-stack development skills.
+A clean, modern, and production-ready portfolio for **Abhinay Negi**, built with HTML5, CSS3, JavaScript (ES6+), and Bootstrap 5. The site is designed to highlight full-stack development skills.
 
 - **Pages**: Home, About, Projects (all grouped), and Contact.
 - **Projects**: Includes case study modals for all three projects.
@@ -11,7 +11,7 @@ A clean, modern, and production-ready portfolio for **Geetanjali Pandey (MCA)**,
 ## 1. Project structure
 
 ```text
-geetanjali-portfolio/
+abhinay-portfolio/
   index.html
   about.html
   projects.html
@@ -54,7 +54,7 @@ geetanjali-portfolio/
   - `about.html` footer.
   - `projects.html` and `contact.html` footers and contact sections.
 - **LinkedIn URL**:
-  - Search for `linkedin.com/in/geetanjali-pandey` in all HTML files and update if needed.
+  - Search for `linkedin.com/in/geetanjali-pandey` in all HTML files and update with your LinkedIn profile.
 - **Projects**:
   - `projects.html` – JPSM, Enhanced AI Learning Platform, Plag AI App cards and descriptions.
   - `index.html` – featured JPSM block + case-study modal.
@@ -119,7 +119,7 @@ Replace the current endpoint in these files:
 
 ### 4. Customization Options
 - **Email subject**: Edit the hidden input `_subject` value in `contact.html`
-- **Fallback email**: Update `geetanjalipandey776@gmail.com` in `js/contact-form.js`
+- **Fallback email**: Update `abhinaynegi1996@gmial.com` in `js/contact-form.js`
 - **Validation rules**: Modify minimum lengths in `js/contact-form.js`
 - **Styling**: Customize `css/contact-form.css` to match your design
 
@@ -133,7 +133,7 @@ Replace the current endpoint in these files:
 
 ## 4. Running locally
 
-From inside the `geetanjali-portfolio` folder:
+From inside the `abhinay-portfolio` folder:
 
 ```bash
 # Option 1: Python
@@ -174,18 +174,18 @@ These commands are **optional** and require Node.js.
 
 ### 6.1 Git repository setup
 
-From `geetanjali-portfolio/`:
+From `abhinay-portfolio/`:
 
 ```bash
 git init
 git add .
-git commit -m "Initial commit: Geetanjali Pandey portfolio"
+git commit -m "Initial commit: Abhinay Negi portfolio"
 ```
 
-Create a new GitHub repository (e.g. `geetanjali-portfolio`) and then:
+Create a new GitHub repository (e.g. `abhinay-portfolio`) and then:
 
 ```bash
-git remote add origin https://github.com/<your-username>/geetanjali-portfolio.git
+git remote add origin https://github.com/<your-username>/abhinay-portfolio.git
 git push -u origin main  # or master, depending on your default branch
 ```
 
@@ -198,7 +198,7 @@ git push -u origin main  # or master, depending on your default branch
    - Folder: `/ (root)`.
 4. Save. GitHub Pages will build and publish your site.
 5. Your URL will look like:
-   - `https://<your-username>.github.io/geetanjali-portfolio/`
+   - `https://<your-username>.github.io/abhinay-portfolio/`
 
 Ensure all links are relative (already done in the HTML files).
 
@@ -206,7 +206,7 @@ Ensure all links are relative (already done in the HTML files).
 
 **Drag-and-drop**:
 
-1. Zip the contents of `geetanjali-portfolio/`.
+1. Zip the contents of `abhinay-portfolio/`.
 2. Go to <https://app.netlify.com/>, create a site.
 3. Drag-and-drop the ZIP into the deploy area.
 
@@ -215,7 +215,7 @@ Ensure all links are relative (already done in the HTML files).
 1. Connect Netlify to your GitHub repo.
 2. Build settings:
    - **Build command**: *(leave empty)* (static site).
-   - **Publish directory**: `geetanjali-portfolio` (or repository root, if you move files).
+   - **Publish directory**: `abhinay-portfolio` (or repository root, if you move files).
 
 Optional `_redirects` are not required for this simple static site.
 
