@@ -1,0 +1,246 @@
+/* Main site styles for Geetanjali Pandey portfolio
+   NOTE: Tweak colors, spacing, and typography here. Then re-minify into main.min.css. */
+
+:root {
+  --gp-primary: #2563eb;
+  --gp-primary-soft: #dbeafe;
+  --gp-bg: #f8fafc;
+  --gp-text: #1e293b;
+  --gp-secondary: #7c3aed;
+  --gp-accent: #06b6d4;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--gp-bg);
+  color: var(--gp-text);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 25%, #6366f1 50%, #dbeafe 75%, #ffffff 100%);
+  color: #ffffff;
+}
+
+.hero-photo-wrapper {
+  width: 220px !important;
+  height: 220px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  border: 6px solid #fff !important;
+  box-shadow: 0 12px 36px rgba(0,0,0,0.15) !important;
+  margin: 0 auto !important;
+  position: relative !important;
+}
+
+.profile-photo {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.avatar {
+  width: 90px !important;
+  height: 90px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  display: inline-block !important;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18) !important;
+  border: 2px solid transparent !important;
+}
+
+.stat-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.stat-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.service-card:hover,
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.service-card,
+.project-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.icon-circle {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--gp-primary), var(--gp-secondary));
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.map-placeholder {
+  background-image: linear-gradient(135deg, #dbeafe, #f9fafb);
+}
+
+.back-to-top {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  z-index: 1030;
+  border-radius: 999px;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: transparent;
+  z-index: 1030;
+}
+
+.scroll-progress-bar {
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, var(--gp-primary), var(--gp-secondary), var(--gp-accent));
+  transition: width 0.1s linear;
+}
+
+.shimmer {
+  position: relative;
+  background-color: #e5e7eb;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(90deg, rgba(255,255,255,0) 0, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0) 100%);
+  animation: shimmer 1.8s infinite;
+}
+
+.shimmer-on-load {
+  position: relative;
+}
+
+.shimmer-on-load::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg,#f3f4f6,#e5e7eb,#f3f4f6);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.shimmer-on-load-loaded::before {
+  opacity: 0;
+  pointer-events: none;
+  animation: none;
+}
+
+.placeholder-card {
+  min-height: 150px;
+}
+
+.gallery-item-btn {
+  border: 0;
+  padding: 0;
+  background: none;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.gallery-item-btn img {
+  display: block;
+}
+
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.35rem 0.6rem;
+  background: #111827;
+  color: #f9fafb;
+  border-radius: 0.4rem;
+  transform: translateY(-150%);
+  transition: transform 0.2s ease;
+  z-index: 2000;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.contact-link-hover {
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-link-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.2);
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.contact-link-hover:hover i {
+  color: #2563eb !important;
+  transform: scale(1.1);
+}
+
+.contact-link-hover:hover a {
+  color: #2563eb !important;
+}
+
+@media (max-width: 575.98px) {
+  .stat-card { text-align: left; }
+
+  .avatar {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .hero-photo-wrapper {
+    width: 180px !important;
+    height: 180px !important;
+    border: 5px solid #fff !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .avatar {
+    width: 85px !important;
+    height: 85px !important;
+  }
+
+  .hero-photo-wrapper {
+    width: 200px !important;
+    height: 200px !important;
+    border: 5.5px solid #fff !important;
+  }
+}

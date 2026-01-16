@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Abhinay Negi - Full-Stack Developer</title>
+  <meta name="description" content="Projects by Abhinay Negi, showcasing full-stack development skills in PHP, SQL, Python, and modern frontend technologies." />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+<body class="bg-light text-dark">
+  <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
+  <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="index.html">AN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                  </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="py-5 py-lg-6 bg-white" aria-label="Projects">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-lg-8">
+            <h1 class="h2 mb-2">Projects</h1>
+            <p class="text-muted mb-0">A selection of my work, from front-end showcases to full-stack applications.</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- StudyVerse - AI-Powered Learning Platform -->
+          <div class="col-lg-6">
+            <article class="card h-100 shadow-sm border-0 project-card">
+              <div class="card-body d-flex flex-column">
+                <h2 class="h5">StudyVerse – AI-Powered Learning Platform</h2>
+                <p class="small text-muted mb-3">An AI-powered full-stack learning platform that provides personalized educational content by generating notes and quizzes for each topic using Google Gemini API, managed securely through an admin-controlled system.</p>
+                <div class="mt-auto">
+                  <div class="d-flex flex-wrap gap-2 mb-3">
+                    <span class="badge bg-primary-subtle text-primary border">PHP</span>
+                    <span class="badge bg-primary-subtle text-primary border">MySQL</span>
+                    <span class="badge bg-primary-subtle text-primary border">JavaScript</span>
+                    <span class="badge bg-primary-subtle text-primary border">HTML5/CSS3</span>
+                    <span class="badge bg-primary-subtle text-primary border">Google Gemini API</span>
+                  </div>
+                  <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#studyverseModal">View Details</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- SHE Secure - Women Safety Android App -->
+          <div class="col-lg-6">
+            <article class="card h-100 shadow-sm border-0 project-card">
+              <div class="card-body d-flex flex-column">
+                <h2 class="h5">SHE Secure – Women Safety Android Application</h2>
+                <p class="small text-muted mb-3">A women's safety Android application designed to provide quick emergency assistance through real-time location sharing, video capture, and SOS alerts.</p>
+                <div class="mt-auto">
+                  <div class="d-flex flex-wrap gap-2 mb-3">
+                    <span class="badge bg-primary-subtle text-primary border">Android (Java)</span>
+                    <span class="badge bg-primary-subtle text-primary border">Firebase</span>
+                    <span class="badge bg-primary-subtle text-primary border">Location Services</span>
+                    <span class="badge bg-primary-subtle text-primary border">XML</span>
+                  </div>
+                  <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#sheSecureModal">View Details</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 border-top bg-light mt-auto">
+    <div class="container small d-flex flex-wrap justify-content-between gap-3">
+      <span>&copy; <span id="currentYear"></span> Abhinay Negi.</span>
+      <span>
+        <a href="mailto:abhinaynegi1996@gmail.com" class="text-decoration-none text-secondary me-3"><i class="fa-solid fa-envelope me-1"></i>Email</a>
+        <a href="https://www.linkedin.com/in/abhinay-negi-9a42a137b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer" class="text-decoration-none text-secondary me-3"><i class="fa-brands fa-linkedin me-1"></i>LinkedIn</a>
+        <a href="https://github.com/abhinaynegi2612" target="_blank" rel="noreferrer" class="text-decoration-none text-secondary"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div class="modal fade" id="studyverseModal" tabindex="-1" aria-labelledby="studyverseModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="studyverseModalLabel">StudyVerse – AI-Powered Learning Platform</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body small">
+          <p class="mb-3">StudyVerse is an AI-powered full-stack learning platform that provides personalized educational content by generating notes and quizzes for each topic using Google Gemini API, managed securely through an admin-controlled system.</p>
+          <h3 class="h6">Key Responsibilities & Features</h3>
+          <ul>
+            <li>Designed and implemented a normalized MySQL database schema for users, courses, topics, quizzes, and progress tracking.</li>
+            <li>Developed backend logic and REST API endpoints using PHP.</li>
+            <li>Built a secure authentication system with role-based access control for admins and learners.</li>
+            <li>Integrated Google Gemini API to automatically generate AI-based notes and quizzes for each topic.</li>
+            <li>Implemented an admin panel to manage Gemini API key, course content, and AI-generated materials.</li>
+            <li>Created a responsive frontend interface for browsing courses, accessing notes, and attempting quizzes.</li>
+            <li>Implemented learning progress tracking and quiz performance monitoring.</li>
+            <li>Focused on scalability, usability, and data security.</li>
+          </ul>
+          <h3 class="h6 mt-3">Tech Stack</h3>
+          <p>PHP, MySQL, JavaScript, HTML5, CSS3, Google Gemini API</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="sheSecureModal" tabindex="-1" aria-labelledby="sheSecureModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="sheSecureModalLabel">SHE Secure – Women Safety Android Application</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body small">
+          <p class="mb-3">SHE Secure is a women's safety Android application designed to provide quick emergency assistance through real-time location sharing, video capture, and SOS alerts.</p>
+          <h3 class="h6">Key Responsibilities & Features</h3>
+          <ul>
+            <li>Implemented Firebase Authentication for secure user login and registration.</li>
+            <li>Developed an SOS button that instantly triggers emergency actions during critical situations.</li>
+            <li>Enabled video recording and sharing to capture evidence and send it to trusted contacts.</li>
+            <li>Implemented real-time location detection to fetch user's current location.</li>
+            <li>Sent current location directly to emergency contacts via messaging for fast assistance.</li>
+            <li>Designed a simple and fast user interface to ensure usability in emergency situations.</li>
+            <li>Focused on reliability, speed, and user safety for emergency response.</li>
+          </ul>
+          <h3 class="h6 mt-3">Tech Stack</h3>
+          <p>Android (Java), Firebase Authentication, Location Services, XML</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-primary back-to-top" id="backToTopBtn" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <div class="scroll-progress" aria-hidden="true"><div class="scroll-progress-bar" id="scrollProgressBar"></div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="js/main.min.js"></script>
+  </body>
+</html>
